@@ -1,0 +1,113 @@
+<!--pages/home/home.wxml-->
+<view style="background-color: white; padding-bottom: 8px;">
+    <view class="home-search">
+      <van-button round type="default" color="#f5f6f7" block size="small" bind:click="onClickToSearch">
+      <van-icon name="search" size="17" color="#dededf" />
+      <text style="color: #dededf; font-size: 4mm;">搜索</text>
+      </van-button>
+    </view>
+</view>
+<view class="goodshop">
+    <van-col span="12">
+      <view class="title">
+      <text class="title-text" style="color: #d1a354;">品牌好店</text>
+      </view>
+      <view>
+      <text class="content-text">随心选放心买</text>
+      </view>
+      <view class="go">
+        <van-button round bind:click="" size="mini" color="#d1a354">
+          <text>Go</text>
+          <van-icon name="arrow" />
+        </van-button>
+      </view>
+    </van-col>
+    <van-col span="12">
+      <view class="home-float-img">
+      <van-image width="70" height="70" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </view>
+    </van-col>
+</view>
+<view class="hotrank">
+    <van-col span="12">
+      <view class="title">
+      <text class="title-text" style="color: #d74451;">热卖榜</text>
+    </view>
+    <view>
+    <text class="content-text">跟着买不会错</text>
+    </view>
+    <view class="go">
+      <van-button round bind:click="" size="mini" color="#d74451">
+        <text>Go</text>
+        <van-icon name="arrow" />
+    </van-button>
+    </view>
+    </van-col>
+    <van-col span="12">
+      <view class="home-float-img">
+      <van-image width="70" height="70" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </view>
+    </van-col>
+</view>
+<view class="today-bipin">
+  <van-row>
+    <van-col>
+      <view class="today-bipin-title">
+        <text>今日必拼</text>
+      </view>
+    </van-col>
+    <van-col class="text">
+      <view class="today-bipin-arrow">
+        <text>更多</text>
+        <van-icon name="arrow" />
+      </view>
+    </van-col>
+  </van-row>
+  <view class="today-bipin-content">
+    <van-image width="106" height="106" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    <view>
+      <text style="font-size: small;">猫猫1号</text>
+    </view>
+    <view>
+      <text class="price-text">¥123</text>
+      <van-button round type="default" color="#f4b045" size="mini" class="pin-button">
+      <text>拼</text>
+      </van-button>
+    </view>
+  </view>
+  <view class="today-bipin-content">
+    <van-image width="106" height="106" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    <view>
+      <text style="font-size: small;">猫猫2号</text>
+    </view>
+    <view class="today-bipin-price">
+      <text class="price-text">¥213</text>
+      <van-button round type="default" color="#f4b045" size="mini" class="pin-button">
+      <text>拼</text>
+      </van-button>
+    </view>
+  </view>
+  <view class="today-bipin-content">
+    <van-image width="106" height="106" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    <view>
+      <text style="font-size: small;">猫猫3号</text>
+    </view>
+    <view>
+      <text class="price-text">¥312</text>
+      <van-button round type="default" color="#f4b045" size="mini" class="pin-button">
+      <text>拼</text>
+      </van-button>
+    </view>
+  </view>
+</view>
+
+<view class="goods-list">
+  <view class="good-col">
+    <view class="single-good">
+    </view>
+  </view>
+  <view class="good-col">
+    <view class="single-good">
+    </view>
+  </view>
+</view>

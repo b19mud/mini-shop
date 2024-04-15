@@ -1,0 +1,103 @@
+/* pages/home/home.wxss */
+page {
+  background-color: #f2f3f5; /* 设置您想要的背景颜色 */
+}
+
+.goodshop{
+  border-radius: 17rpx;
+  background-color:#f4f0e9;
+  clear: left;
+  margin-top: 10px;
+  float: left;
+  margin-left: 3%;
+  width: 45.5%;
+}
+
+.hotrank{
+  border-radius: 17rpx;
+  background-color: #fef7f9;
+  margin-top: 10px;
+  float: left;
+  margin-left: 3%;
+  width: 45.5%;
+}
+
+.today-bipin{
+  margin-top: 10px;
+  margin-left: 3%;
+  width: 94%;
+  float: left;
+  clear: left;
+  border-radius: 17rpx;
+  background-color: white;
+}
+
+.today-bipin-title {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.today-bipin-arrow{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.home-search{
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom: 2%;
+}
+
+.home-chat {
+  float: right;
+}
+
+.title-text {
+  font-size: 4mm;
+  margin-left: 10px;
+}
+
+.content-text {
+  font-size: 3mm;
+  margin-left: 10px;
+}
+
+.home-float-img{
+  float:right;
+  margin-top: 10px;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+
+.go {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.text {
+  float:right;
+  font-size: small;
+}
+
+.today-bipin-content {
+  float: left;
+  margin-top: 10px;
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+.pin-button{
+  float: right;
+}
+
+.today-bipin-price{
+  margin-bottom: 8px;
+}
+
+.price-text {
+  color: #ec5952;
+}

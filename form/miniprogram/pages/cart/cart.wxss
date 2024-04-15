@@ -1,0 +1,30 @@
+/* pages/mall/cart/cart.wxss */
+
+page {
+  background-color: #f2f3f5; /* 设置您想要的背景颜色 */
+}
+
+
+.plus-button {
+  
+}
+
+.van-panel {
+  margin-top: 10px;
+  border-radius: 17rpx;
+  left: 2.5%;
+  width: 95%;
+}
+
+.van-card{
+  --card-background-color: white;
+}
+
+.van-col {
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.van-submit-bar{
+  padding-bottom: 50px;
+}

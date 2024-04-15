@@ -1,0 +1,32 @@
+<!--pages/search/search.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+
+<view>
+  <div class="recent-search">
+    <text>最近搜索</text>
+    <div>
+      <van-icon name="delete-o" size="20" class="recent-search-delete"/>
+    </div>
+  </div>
+  <view>
+    <van-button  round type="default" size="small" class="search-info-button">相机</van-button>
+    <van-button  round type="default" size="small" class="search-info-button">猫</van-button>
+    <van-button  round type="default" size="small" class="search-info-button">大码冬季男装</van-button>
+    <van-button  round type="default" size="small" class="search-info-button">迪卡侬</van-button>
+  </view>
+</view>
+
+<view class="search-find">
+  <div class="search-titile">
+    <text>搜索发现</text>
+  </div>
+  <div>
+    <view>
+      <van-button  round type="default" size="small" class="search-info-button">始祖鸟</van-button>
+      <van-button  round type="default" size="small" class="search-info-button">迪卡侬</van-button>
+      <van-button  round type="default" size="small" class="search-info-button">贝亲奶瓶</van-button>
+      <van-button  round type="default" size="small" class="search-info-button">默认按钮</van-button>
+      <van-button  round type="default" size="small" class="search-info-button">按钮</van-button>
+    </view>
+  </div>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/classification/classification.wxml-->
+<van-tree-select
+  items="{{ items }}"
+  height="1000"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem"
+>
+<van-grid column-num="3" slot="content" square gutter="{{ 10 }}" >
+  <van-grid-item icon="photo-o" text="{{item.name}}" wx:for="{{ rightdata }}" />
+</van-grid>
+
+</van-tree-select>
+

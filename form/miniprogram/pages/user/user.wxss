@@ -1,0 +1,103 @@
+/* pages/mall.wxss */
+page {
+  background-color: #f2f3f5; /* 设置您想要的背景颜色 */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  font-size: smaller;
+}
+
+.text-small {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.col-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.panel-user {
+  position: relative;
+  top: 20px;
+}
+
+.panel-collect {
+  position:relative;
+  top: 40px;
+}
+
+.panel-order {
+  position: relative;
+  top: 60px;
+}
+
+.van-panel {
+  height: 110px;
+  border-radius: 17rpx;
+  width: 95%;
+  left: 2.5%;
+}
+
+.panel-order-top {
+  position: relative;
+  top:10px;
+  left: 15px;
+}
+
+.panel-order-top-all-order {
+  position: relative;
+  top:10px;
+}
+
+.panel-order-menu {
+  position: relative;
+  top: 10px;
+}
+
+.van-col--17 {
+  height: 40px;
+}
+
+.van-col--4 {
+  height: 60px;
+}
+
+.van-col--7 {
+  height: 40px;
+}
+
+.panel-menu {
+  position:relative;
+  top: 80px;
+}
+
+.panel-menu-col {
+  position:relative;
+  top:10px;
+}
+
+.panel-menu-col-2 {
+  position:relative;
+  top:22px;
+}
+

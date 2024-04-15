@@ -1,0 +1,58 @@
+<!--pages/mall/cart/cart.wxml-->
+<scroll-view scroll-y="true" style="height: {{cartHeight}};">
+  <view wx:for="{{goodsInfo}}" wx:for-item="item">
+  <van-panel>
+    <van-row>
+      <van-col type="test" class="cart-panel-top">
+        <div>
+          <div class="text">
+            <van-icon name="shop-o" size="18" />
+            {{item.shopName}}
+            <van-icon name="arrow" size="14"/>
+          </div>
+        </div>
+      </van-col>
+    </van-row>
+    <view wx:for="{{item.goods}}" wx:for-item="good">
+        <van-card
+          num="{{good.goodsCount}}"
+          tag=""
+          price="{{good.goodsPrice}}"
+          desc="{{good.describe}}"
+          title="{{good.title}}"
+          thumb="{{ good.goodsPic }}"
+        >
+        <view slot="footer">
+          <van-button 
+            data-goodid="{{good.id}}"
+            square 
+            icon="minus" 
+            type="default" 
+            size="mini" 
+            bind:click="decreaseQuantity">
+          </van-button>
+          <van-button 
+            data-goodid="{{good.id}}"
+            square 
+            icon="plus" 
+            type="default" 
+            size="mini"
+            bind:click="increaseQuantity"
+          ></van-button>
+        </view>
+        </van-card>
+    </view>
+  </van-panel>
+</view>
+
+<view>
+  <van-submit-bar
+  price="{{ 3050 }}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ false }}"
+>
+<van-checkbox value="{{ checked }}" bind:change="onAllSelect">全选</van-checkbox>
+</van-submit-bar>
+</view>
+</scroll-view>
