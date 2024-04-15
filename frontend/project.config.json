@@ -29,7 +29,7 @@
   "simulatorPluginLibVersion": {},
   "condition": {},
   "srcMiniprogramRoot": "miniprogram/",
-  "appid": "wxcc91ac55e0486297",
+  "appid": "touristappid",
   "libVersion": "3.0.0",
   "editorSetting": {
     "tabIndent": "insertSpaces",
