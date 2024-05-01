@@ -1,0 +1,4 @@
+2024-05-01T18:14:08.602+0800	INFO	src/main.go:51	start server
+2024-05-01T18:14:08.602+0800	INFO	src/main.go:52	test
+[2024-05-01 18:14:37]	[info]	[src/main.go:51]	start server
+[2024-05-01 18:14:37]	[info]	[src/main.go:52]	test

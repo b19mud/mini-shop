@@ -1,8 +1,8 @@
 .PHONY: all build clean run check cover lint docker help
-BIN_FILE=hello
+BIN_FILE=mini_shop
 all: check build
 build:
-	@go build -x -v -o "./bin/${BIN_FILE}" ./hello/main.go
+	@go build -x -v -o "./bin/${BIN_FILE}" ./src/main.go
 clean:
 	@go clean
 	rm --force "xx.out"
