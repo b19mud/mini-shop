@@ -100,14 +100,11 @@
     </view>
   </view>
 </view>
-
-<view class="goods-list">
-  <view class="good-col">
-    <view class="single-good">
-    </view>
-  </view>
-  <view class="good-col">
-    <view class="single-good">
-    </view>
-  </view>
+<view class="scroll-goods">
+  <view class="index-scroll-goods" wx:for="{{datalist}}" wx:for-item="item">
+  <van-image width="150" height="200" src="{{item.goodImage}}" />
+  <view>{{item.goodPrice}}</view>
+  <view>{{item.goodShop}}</view>
 </view>
+</view>
+

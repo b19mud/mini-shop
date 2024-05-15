@@ -5,6 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
+    hasMoreData: true,
+    loading: false,
+    datalist: [
+      {
+        goodImage: "https://img.yzcdn.cn/vant/cat.jpeg",
+        goodShop: "二狗的店铺",
+        goodPrice: "100",
+      },
+      {
+        goodImage: "https://img.yzcdn.cn/vant/cat.jpeg",
+        goodShop: "二狗的店铺",
+        goodPrice: "100",
+      }
+    ],
     "goods-list": [ 
       {
         "good-name": "",
@@ -20,6 +34,39 @@ Page({
 
       }
     ]
+  },
+  onReachBottom: function () {
+    if (!this.data.hasMoreData || this.data.loading || this.data.datalist.length >= 10) {
+      return
+    }
+    this.loadMoreData()
+  },
+
+  loadMoreData: function() {
+    console.log("loadMoreData")
+    this.setData({loading: true})
+    // todo 渲染数据
+    let newDataList = this.loadNextPostList()
+    if (newDataList.length == 0) {
+        this.setData({hasMoreData: false})
+    } else {
+      let oldList = this.data.datalist || []
+      let dataList = oldList.concat(newDataList as any)
+      this.setData({datalist: dataList})
+    }
+    this.setData({loading: false})
+  },
+
+  loadNextPostList: function() {
+    let data = [];
+    for (let i = 0; i < 10; i++) {
+      data.push({
+        goodPrice: this.data.datalist.length + i + 1,
+        goodShop: "Name " + (this.data.datalist.length + i + 1),
+        goodImage: "https://img.yzcdn.cn/vant/cat.jpeg",
+      });
+    }
+    return data;
   },
 
   /**
@@ -61,13 +108,6 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
 
   },
 
