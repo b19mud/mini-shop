@@ -1,51 +1,60 @@
 /* pages/home/home.wxss */
 page {
   background-color: #f2f3f5; /* 设置您想要的背景颜色 */
+  height: 603px;
+}
+
+.home-scroll{
+  height: 515px;
 }
 
 .goodshop{
   border-radius: 17rpx;
   background-color:#f4f0e9;
-  clear: left;
   margin-top: 10px;
-  float: left;
+  display: inline-block;
   margin-left: 3%;
   width: 45.5%;
+  height: 95px;
 }
 
 .hotrank{
   border-radius: 17rpx;
   background-color: #fef7f9;
   margin-top: 10px;
-  float: left;
+  display: inline-block;
   margin-left: 3%;
   width: 45.5%;
+  height: 95px;
 }
 
 .today-bipin{
   margin-top: 10px;
   margin-left: 3%;
+  height: 200px;
   width: 94%;
-  float: left;
+  display: inline-block;
   clear: left;
   border-radius: 17rpx;
   background-color: white;
 }
 
-.scroll-goods{
-  width: 100%;
-  height: 100%;
-  float: left;
-}
-
 .index-scroll-goods{
   width: 45.5%;
-  height: 50%;
+  height: 160px;
   margin-left: 3%;
   margin-top: 10px;
   border-radius: 17rpx;
   background-color: white;
-  float: left;
+  display: inline-block;
+}
+
+.bottom-hidden{
+  visibility: hidden;
+  height: 1px;
+}
+
+.loading{
 }
 
 .today-bipin-title {

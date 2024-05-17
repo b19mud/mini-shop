@@ -36,7 +36,23 @@ Page({
     ]
   },
   onReachBottom: function () {
-    if (!this.data.hasMoreData || this.data.loading || this.data.datalist.length >= 10) {
+    // if (!this.data.hasMoreData) {
+    //   // todo 设置底部元素
+    //   return
+    // }
+    // if (this.data.loading || this.data.datalist.length >= 10) {
+    //   return
+    // }
+    // this.loadMoreData()
+  },
+
+  checkLoadMoreData: function (event) {
+    console.log("test load data")
+    if (!this.data.hasMoreData) {
+      // todo 设置底部元素
+      return
+    }
+    if (this.data.loading || this.data.datalist.length >= 10) {
       return
     }
     this.loadMoreData()

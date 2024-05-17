@@ -1,6 +1,6 @@
 <!--custom-tab-bar/index.wxml-->
 
-<van-tabbar active="{{active}}" bind:change="onChange">
+<van-tabbar active="{{active}}" bind:change="onChange" placeholder="true">
   <van-tabbar-item name="home" icon="home-o">首页</van-tabbar-item>
   <van-tabbar-item name="classification" icon="more-o">分类</van-tabbar-item>
   <van-tabbar-item name="cart" icon="shopping-cart-o">购物车</van-tabbar-item>

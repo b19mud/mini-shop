@@ -7,6 +7,7 @@
       </van-button>
     </view>
 </view>
+<scroll-view class="home-scroll" scroll-y="true" lower-threshold="100" bindscrolltolower="checkLoadMoreData">
 <view class="goodshop">
     <van-col span="12">
       <view class="title">
@@ -100,11 +101,12 @@
     </view>
   </view>
 </view>
-<view class="scroll-goods">
-  <view class="index-scroll-goods" wx:for="{{datalist}}" wx:for-item="item">
-  <van-image width="150" height="200" src="{{item.goodImage}}" />
+<view class="index-scroll-goods" wx:for="{{datalist}}" wx:for-item="item">
+  <van-image width="150" height="100" src="{{item.goodImage}}" />
   <view>{{item.goodPrice}}</view>
   <view>{{item.goodShop}}</view>
 </view>
-</view>
+<view class="bottom-hidden">test</view>
+<view class="loading" hidden="{{!loading}}">加载中</view>
+</scroll-view>
 
