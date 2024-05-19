@@ -118,8 +118,6 @@ Page({
   },
 
   onClickNav({ detail = {} }) {
-    console.log(detail)
-    console.log(this.data.infos)
     this.setData({rightdata : this.data.infos[detail.index+1]})
     this.setData({mainActiveIndex: detail.index || 0})
   },
