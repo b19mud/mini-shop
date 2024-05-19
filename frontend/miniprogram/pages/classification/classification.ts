@@ -5,28 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    items:[
-      {
-        text:"日用百货",
-        english: "",
-      },
-      {
-        text:"水果生鲜",
-        english: "fruit"
-      },
-      {
-        text:"食品酒水"
-      },
-      {
-        text:"美妆个护"
-      },
-      {
-        text:"服饰鞋包"
-      },
-      {
-        text:"母婴用品"
-      }
-    ],
+    items:[],
     mainActiveIndex: 0,
     activeId: 0,
     rightdata: [],
@@ -87,9 +66,60 @@ Page({
    */
   onShow() {
     this.getTabBar().setData({active:"classification"})
+
+    // todo 获取分类信息
+    this.getAllClassification()
+
     let mainActiveIndex = this.data.mainActiveIndex;
-    this.setData({rightdata : this.data.infos[mainActiveIndex]})
-    
+
+    // todo 获取该index的详细分类
+    //this.setData({rightdata : this.data.infos[mainActiveIndex]})
+    console.log(this.data.items)
+    for (let item of this.data.items) {
+      this.getAllCategorysWithClassification(item.id)
+    }
+  },
+
+  getAllCategorysWithClassification(id) {
+    wx.request({
+      url: 'http://127.0.0.1:8080/category',
+      method: "POST",
+      data: {
+        "ClassificationId": id
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: (res) => {
+        console.log(res.data)
+        this.setData({})
+      },
+      fail (res) {
+        console.log(res.data)
+      }
+    })
+  },
+
+  getAllClassification() {
+    wx.request({
+        url: 'http://127.0.0.1:8080/classification',
+        method: "POST",
+        data: {},
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success: (response) => {
+          let classificatioins = response.data.ClassificationList
+          let itemDatas = []
+          for (let item of classificatioins) {
+            itemDatas.push({
+              id: item.Id,
+              text: item.GoodsClassificationName
+            })
+          }
+          this.setData({items: itemDatas})
+        }
+    })
   },
 
   /**

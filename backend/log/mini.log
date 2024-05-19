@@ -35,3 +35,6 @@
 [2024-05-19 12:28:08]	[info]	[src/main.go:51]	start server
 [2024-05-19 12:28:12]	[error]	[mysqlconfig/mysql_config.go:73]	connect is not exist
 [2024-05-19 12:30:00]	[info]	[src/main.go:51]	start server
+[2024-05-19 14:31:49]	[info]	[src/main.go:51]	start server
+[2024-05-19 14:32:51]	[error]	[classification/get_all_categorys.go:23]	EOF
+[2024-05-19 14:33:04]	[error]	[classification/get_all_categorys.go:23]	EOF
