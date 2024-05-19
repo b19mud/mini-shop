@@ -2,3 +2,36 @@
 2024-05-01T18:14:08.602+0800	INFO	src/main.go:52	test
 [2024-05-01 18:14:37]	[info]	[src/main.go:51]	start server
 [2024-05-01 18:14:37]	[info]	[src/main.go:52]	test
+[2024-05-19 10:56:35]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:00:09]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:07:40]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:09:51]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:13:49]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:13:52]	[error]	[classification/get_all_classification.go:23]	EOF
+[2024-05-19 11:14:41]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:14:45]	[info]	[classification/get_all_classification.go:20]	test
+[2024-05-19 11:14:45]	[error]	[classification/get_all_classification.go:24]	EOF
+[2024-05-19 11:18:01]	[info]	[classification/get_all_classification.go:20]	test
+[2024-05-19 11:18:01]	[info]	[classification/get_all_classification.go:27]	test1
+[2024-05-19 11:18:01]	[info]	[classification/get_all_classification.go:35]	test2
+[2024-05-19 11:41:37]	[error]	[src/main.go:28]	Error 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+[2024-05-19 11:43:56]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:47:46]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:50:45]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:51:38]	[info]	[src/main.go:51]	start server
+[2024-05-19 11:57:51]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:07:20]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:08:25]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:08:27]	[error]	[mysqlconfig/mysql_config.go:71]	connect is not exist
+[2024-05-19 12:09:46]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:09:49]	[error]	[mysqlconfig/mysql_config.go:71]	connect is not exist
+[2024-05-19 12:10:34]	[info]	[mysqlconfig/mysql_config.go:58]	test connect
+[2024-05-19 12:10:34]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:10:36]	[error]	[mysqlconfig/mysql_config.go:71]	connect is not exist
+[2024-05-19 12:14:01]	[info]	[mysqlconfig/mysql_config.go:62]	db connect name minishop
+[2024-05-19 12:14:01]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:14:23]	[error]	[mysqlconfig/mysql_config.go:70]	connect is not exist
+[2024-05-19 12:28:08]	[info]	[mysqlconfig/mysql_config.go:66]	minishop, &{0x14000182480 <nil> 0 0x14000348000 1}
+[2024-05-19 12:28:08]	[info]	[src/main.go:51]	start server
+[2024-05-19 12:28:12]	[error]	[mysqlconfig/mysql_config.go:73]	connect is not exist
+[2024-05-19 12:30:00]	[info]	[src/main.go:51]	start server

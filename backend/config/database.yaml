@@ -1,28 +1,10 @@
 database:
   - {
-    connectname: "test1",
+    connectname: "minishop",
     addr: "127.0.0.1",
     port: 3306,
-    username: "",
-    password: "",
+    username: "root",
+    password: "123456",
     charset: "utf8",
-    dbname: ""
-  }
-  - {
-    connectname: "test2",
-    addr: "127.0.0.1",
-    port: 3306,
-    username: "",
-    password: "",
-    charset: "utf8",
-    dbname: ""
-  }
-  - {
-    connectname: "test3",
-    addr: "127.0.0.1",
-    port: 3306,
-    username: "",
-    password: "",
-    charset: "utf8",
-    dbname: ""
+    dbname: "mini_shop"
   }
