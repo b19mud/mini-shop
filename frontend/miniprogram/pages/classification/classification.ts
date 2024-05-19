@@ -18,9 +18,6 @@ Page({
   onLoad() {
     // todo 获取分类信息
     this.getAllClassification()
-    setTimeout(() => {
-      console.log()
-    }, 2000);
   },
 
   /**
