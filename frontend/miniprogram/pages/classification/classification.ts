@@ -9,49 +9,18 @@ Page({
     mainActiveIndex: 0,
     activeId: 0,
     rightdata: [],
-    infos: {
-      0: [
-        {
-          name:"电脑配件"
-        },
-        {
-          name:"手机配件"
-        },
-        {
-          name:"椅子"
-        },
-        {
-          name:"桌子"
-        },
-        {
-          name:"凳子"
-        }
-      ],
-      1: [
-        {
-          name:"北方水果"
-        },
-        {
-          name:"南方水果"
-        },
-        {
-          name:"东方水果"
-        },
-        {
-          name:"西方水果"
-        }
-      ],
-      2: [
-
-      ]
-    }
+    infos: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    // todo 获取分类信息
+    this.getAllClassification()
+    setTimeout(() => {
+      console.log()
+    }, 2000);
   },
 
   /**
@@ -66,18 +35,6 @@ Page({
    */
   onShow() {
     this.getTabBar().setData({active:"classification"})
-
-    // todo 获取分类信息
-    this.getAllClassification()
-
-    let mainActiveIndex = this.data.mainActiveIndex;
-
-    // todo 获取该index的详细分类
-    //this.setData({rightdata : this.data.infos[mainActiveIndex]})
-    console.log(this.data.items)
-    for (let item of this.data.items) {
-      this.getAllCategorysWithClassification(item.id)
-    }
   },
 
   getAllCategorysWithClassification(id) {
@@ -92,10 +49,15 @@ Page({
       },
       success: (res) => {
         console.log(res.data)
-        this.setData({})
-      },
-      fail (res) {
-        console.log(res.data)
+        let info_data = this.data.infos
+        let categorys = []
+        for (let item of res.data.CategoryList) {
+          categorys.push({
+            name: item.GoodsCategoryName
+          })
+        }
+        info_data[id] = categorys
+        this.setData({infos:info_data})
       }
     })
   },
@@ -116,6 +78,7 @@ Page({
               id: item.Id,
               text: item.GoodsClassificationName
             })
+            this.getAllCategorysWithClassification(item.Id)
           }
           this.setData({items: itemDatas})
         }
@@ -160,7 +123,7 @@ Page({
   onClickNav({ detail = {} }) {
     console.log(detail)
     console.log(this.data.infos)
-    this.setData({rightdata : this.data.infos[detail.index]})
+    this.setData({rightdata : this.data.infos[detail.index+1]})
     this.setData({mainActiveIndex: detail.index || 0})
   },
 
