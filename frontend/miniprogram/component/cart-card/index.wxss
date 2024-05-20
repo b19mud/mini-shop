@@ -1,0 +1,57 @@
+/* component/cart-card.wxss */
+
+.cart-card-panel {
+    width: 100%;
+    background-color: white;
+}
+
+.cart-card-image {
+    display: inline-block;
+    width: 35%;
+}
+
+.cart-card-info {
+    display: inline-block;
+    width: 65%;
+}
+
+.cart-card-title{
+}
+
+.cart-card-desc {
+}
+
+.cart-card-tags{
+}
+
+.cart-card-spec {
+}
+
+.cart-card-unit {
+    display: inline-block;
+}
+
+.cart-card-num {
+    float: right;
+    margin-right: 25px;
+}
+
+.cart-card-num-text {
+    display: inline-block;
+    background-color: aqua;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.square-button-minus{
+    --button-mini-height: 25px;
+    --button-mini-min-width: 25px;
+}
+
+.square-button-plus{
+    --button-mini-height: 25px;
+    --button-mini-min-width: 25px;
+}

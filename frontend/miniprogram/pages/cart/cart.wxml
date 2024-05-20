@@ -43,7 +43,9 @@
         </van-card>
     </view>
   </van-panel>
-</view>
+  </view>
+  <cart-card price="12"></cart-card>
+</scroll-view>
 
 <view>
   <van-submit-bar
@@ -55,4 +57,3 @@
 <van-checkbox value="{{ checked }}" bind:change="onAllSelect">全选</van-checkbox>
 </van-submit-bar>
 </view>
-</scroll-view>

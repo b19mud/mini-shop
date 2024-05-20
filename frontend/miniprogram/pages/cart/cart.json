@@ -14,6 +14,7 @@
     "van-checkbox-group": "@vant/weapp/checkbox-group/index",
     "van-card": "@vant/weapp/card/index",
     "van-button": "@vant/weapp/button/index",
-    "van-stepper": "@vant/weapp/stepper/index"
+    "van-stepper": "@vant/weapp/stepper/index",
+    "cart-card": "/component/cart-card/index"
   }
 }

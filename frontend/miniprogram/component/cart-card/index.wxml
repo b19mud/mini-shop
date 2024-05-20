@@ -1,0 +1,22 @@
+<view class="cart-card-panel">
+    <view class="cart-card-image">
+        <van-image
+            width="100px"
+            height="100px"
+            fit="fill"
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+    </view>
+    <view class="cart-card-info">
+        <view class="cart-card-title">{{title}}</view>
+        <view class="cart-card-desc">描述</view>
+        <view class="cart-card-tags">标签</view>
+        <view class="cart-card-spec">规格</view>
+        <view class="cart-card-unit">{{price}}</view>
+        <view class="cart-card-num">
+            <van-button class="square-button-minus" icon="minus" type="default" size="mini" color="gray" />
+            <text class="cart-card-num-text">{{num}}</text>
+            <van-button class="square-button-plus" icon="plus" type="default" size="mini" color="gray" />
+        </view>
+    </view>
+</view>
