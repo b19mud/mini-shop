@@ -15,7 +15,7 @@ Component({
     },
     title: {
       type: String,
-      value: "测试"
+      value: "测试标题"
     },
     desc: {
       type: String,
@@ -40,6 +40,10 @@ Component({
     thumb: {
       type: String,
       value: ''
+    },
+    checked: {
+      type: Boolean,
+      value: true
     }
   },
 
