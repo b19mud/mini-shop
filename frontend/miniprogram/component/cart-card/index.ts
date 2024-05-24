@@ -43,7 +43,7 @@ Component({
     },
     checked: {
       type: Boolean,
-      value: true
+      value: false
     }
   },
 

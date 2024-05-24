@@ -38,3 +38,6 @@
 [2024-05-19 14:31:49]	[info]	[src/main.go:51]	start server
 [2024-05-19 14:32:51]	[error]	[classification/get_all_categorys.go:23]	EOF
 [2024-05-19 14:33:04]	[error]	[classification/get_all_categorys.go:23]	EOF
+[2024-05-24 20:44:59]	[info]	[src/main.go:51]	start server
+[2024-05-24 20:44:59]	[info]	[src/main.go:52]	8081
+[2024-05-24 20:45:26]	[info]	[src/main.go:51]	start server

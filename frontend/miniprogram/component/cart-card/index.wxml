@@ -7,7 +7,7 @@
             width="90px"
             height="90px"
             fit="fill"
-            src="https://img.yzcdn.cn/vant/cat.jpeg"
+            src="{{thumb}}"
         />
     </view>
     <view class="cart-card-info">
@@ -22,9 +22,7 @@
                 <text class="cart-card-unit-text-price">{{price}}</text>
             </view>
             <view class="cart-card-num">
-                <van-button class="square-button-minus" icon="minus" type="default" size="mini" color="gray" />
-                <text class="cart-card-num-text">{{num}}</text>
-                <van-button class="square-button-plus" icon="plus" type="default" size="mini" color="gray" />
+                <van-stepper value="{{num}}" step="1" />
             </view>
         </view>
     </view>

@@ -4,13 +4,12 @@ page {
   background-color: #f2f3f5; /* 设置您想要的背景颜色 */
 }
 
-
-.plus-button {
-  
+.cart{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .van-panel {
-  margin-top: 10px;
   border-radius: 17rpx;
   left: 2.5%;
   width: 95%;

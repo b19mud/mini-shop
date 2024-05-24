@@ -88,6 +88,7 @@ Page({
     this.setData({
       checked: event.detail,
     });
+    // todo 全选所有购物车数据
   },
 
   /**

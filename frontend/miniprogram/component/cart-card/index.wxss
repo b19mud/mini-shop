@@ -3,7 +3,7 @@
 .cart-card-panel {
     width: 100%;
     background-color: yellow;
-    height: 20%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,11 +67,11 @@
 
 .cart-card-num {
     margin-right: 6%;
+    height: 100%;
 }
 
 .cart-card-num-text {
     width: 10%;
-    height: 100%;
     background-color: aqua;
     margin-right: 1.5px;
     margin-left: 1.5px;
@@ -80,11 +80,9 @@
 }
 
 .square-button-minus{
-    --button-mini-height: 25px;
     --button-mini-min-width: 25px;
 }
 
 .square-button-plus{
-    --button-mini-height: 25px;
     --button-mini-min-width: 25px;
 }
