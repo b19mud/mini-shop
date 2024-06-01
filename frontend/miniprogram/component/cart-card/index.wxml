@@ -8,12 +8,20 @@
             height="90px"
             fit="fill"
             src="{{thumb}}"
+            bind:click="onNavigateToGoodDetail"
         />
     </view>
     <view class="cart-card-info">
         <view class="cart-card-title">
             <text class="cart-card-title-text">{{title}}</text>
-            <view class="cart-card-spec">规格</view>
+            <view class="cart-card-spec">
+                <van-button square size="mini" color="gray" bind:click="onShowPop">
+                    <view class="cart-card-spec-button">
+                        {{spec}}
+                        <van-icon name="arrow-down" />
+                    </view>
+                </van-button>
+            </view>
         </view>
         
         <view class="unit-price-num">
@@ -26,4 +34,10 @@
             </view>
         </view>
     </view>
+    <van-popup
+        show="{{ showPop }}"
+        position="bottom"
+        custom-style="height: 50%;"
+        bind:close="onClosePop"
+        />
 </view>

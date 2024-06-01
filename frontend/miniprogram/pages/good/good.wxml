@@ -1,0 +1,45 @@
+<scroll-view >
+    <swiper
+    autoplay="{{true}}"
+    interval="{{2000}}"
+    indicator-dots="{{true}}"
+    class="good-swiper"
+    >
+    <swiper-item >
+        <van-image fit="cover" width="100%" height="280" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </swiper-item>
+    <swiper-item >
+        <van-image fit="cover" width="100%" height="280" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </swiper-item>
+    <swiper-item >
+        <van-image fit="cover" width="100%" height="280" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </swiper-item>
+    </swiper>
+    <view class="good-price">
+        <text class="good-price-unit">¥</text>
+        <text class="good-price-text">79.00-299.00</text>
+    </view>
+    <view class="good-title">
+        <text class="good-title-text">固本堂 怀山药铁棍山药粉500g/罐</text>
+        <view>
+            <van-icon name="star-o" />
+            <text>收藏</text>
+        </view>
+    </view>
+    <view class="good-guarantee">
+        <text>放心购</text>
+    </view>
+
+    <view>
+
+    </view>
+
+</scroll-view>
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" dot />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+  <van-goods-action-icon icon="shop-o" text="店铺" />
+  <van-goods-action-button text="加入购物车" type="warning" />
+  <van-goods-action-button text="立即购买" />
+</van-goods-action>
+

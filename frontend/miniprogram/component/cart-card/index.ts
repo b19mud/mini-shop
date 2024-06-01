@@ -1,4 +1,6 @@
 // component/cart-card.ts
+import Toast from '@vant/weapp/toast/toast';
+
 Component({
 
   /**
@@ -24,6 +26,10 @@ Component({
     currency: {
       type: String,
       value: '0'
+    },
+    spec: {
+      type: String,
+      value: '测试规格'
     },
     tag: {
       type: String,
@@ -51,12 +57,30 @@ Component({
    * 组件的初始数据
    */
   data: {
+    showPop: false
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    onShowPop: function() {
+      this.setData({ showPop: true });
+    },
 
+    onClosePop: function() {
+      this.setData({ showPop: false });
+    },
+
+    onNavigateToGoodDetail: function(event) {
+      wx.navigateTo({
+        url: '../good/good',
+        success: function(res) {
+          // 通过eventChannel向被打开页面传送数据
+          res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+        }
+      })
+    }
+    
   }
 })

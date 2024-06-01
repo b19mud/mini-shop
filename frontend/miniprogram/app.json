@@ -5,7 +5,8 @@
     "pages/cart/cart",
     "custom-tab-bar/index",
     "pages/search/search",
-    "pages/classification/classification"
+    "pages/classification/classification",
+    "pages/good/good"
   ],
   "tabBar": {
     "custom": true,

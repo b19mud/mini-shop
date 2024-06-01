@@ -1,0 +1,43 @@
+/* pages/good/good.wxss */
+
+page {
+    background-color: #f2f3f5; /* 设置您想要的背景颜色 */
+  }
+
+.good-swiper{
+    height: 280px;
+}
+
+.good-price{
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.good-price-unit{
+    font-size: smaller;
+    color: red;
+    font-weight: bold;
+}
+.good-price-text{
+    font-size: larger;
+    color: red;
+    font-weight: bolder;
+}
+
+.good-title {
+    background-color: white;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.good-title-text{
+    padding-left: 10px;
+    font-size: large;
+}
+
+.good-guarantee {
+    margin-top: 5px;
+}
