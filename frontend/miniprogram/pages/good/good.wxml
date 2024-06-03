@@ -1,4 +1,4 @@
-<scroll-view >
+<scroll-view scroll-y="true" style="height: {{goodHeight}};">
     <swiper
     autoplay="{{true}}"
     interval="{{2000}}"
@@ -20,17 +20,60 @@
         <text class="good-price-text">79.00-299.00</text>
     </view>
     <view class="good-title">
-        <text class="good-title-text">固本堂 怀山药铁棍山药粉500g/罐</text>
-        <view>
-            <van-icon name="star-o" />
-            <text>收藏</text>
+        <text class="good-title-text">宝藏洗发水恩芬怡调理型精油洗发水300ml丰盈蓬松顺滑去屑止痒防脱</text>
+        <view class="good-title-collect">
+            <van-icon name="star-o" color="#969799" c/>
+            <text class="good-title-collect-text">收藏</text>
         </view>
     </view>
-    <view class="good-guarantee">
-        <text>放心购</text>
+    <view class="good-guarantee" bindtap="onShowGuarantee">
+        <view class="good-guarantee-left">
+            <view>
+                <van-icon name="thumb-circle-o" color="green" />
+                <text class="good-guarantee-text">放心购</text>
+            </view>
+            <text class="good-guarantee-text-bottom">品质保证·专属客户·先行赔付</text>
+        </view>
+        <view class="good-right-icon-arrow">
+            <van-icon name="arrow" color="#969799" />
+        </view>
+    </view>
+    <van-popup
+        show="{{ guarantee }}"
+        position="bottom"
+        custom-style="height: 50%;"
+        bind:close="onCloseShowGuarantee"
+        ></van-popup>
+    <view class="good-carriage">
+        <text class="good-select-color">运费</text>
+    </view>
+    <view class="good-discount">
+        <view>
+            <text class="good-select-color">优惠</text>
+        </view>
+        <view class="good-right-icon-arrow">
+            <van-icon name="arrow" color="#969799" />
+        </view>
+        
     </view>
 
-    <view>
+    <view class="good-service">
+        <view>
+            <text class="good-select-color">服务</text>
+        </view>
+        <view class="good-right-icon-arrow">
+            <van-icon name="arrow" color="#969799" />
+        </view>
+    </view>
+    <view class="good-choice">
+        <view>
+            <text class="good-select-color">选择</text>
+        </view>
+        <view class="good-right-icon-arrow">
+            <van-icon name="arrow" color="#969799" />
+        </view>
+    </view>
+    <view class="good-comment">
 
     </view>
 
