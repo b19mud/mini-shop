@@ -74,7 +74,37 @@
         </view>
     </view>
     <view class="good-comment">
+        <view>
+            <text>商品评价</text>
+        </view>
+        <view class="good-right-icon-arrow">
+            <text style="font-size:small;color:#969799">查看全部</text>
+            <van-icon name="arrow" color="#969799" />
+        </view>
+    </view>
 
+    <view class="good-shop">
+        <view class="good-shop-info">
+            <view style="width: 20%;">
+                <van-image class="good-shop-pic" fit="cover" width="60" height="60" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+            </view>
+            <view class="good-shop-info-text">
+                <view class="good-shop-info-text-display">
+                    <text class="good-shop-name">小憩居健康馆</text>
+                    <view class="good-shop-ope-button">
+                        <van-button type="default" plain round size="small">收藏店铺</van-button>
+                        <van-button type="default" plain round color="red" size="small">进店逛逛</van-button>
+                    </view>
+                </view>
+                <view class="good-shop-info-text-tag">
+                    <van-tag type="primary" size="medium" color="#f3daaa" text-color="#582619">8年有赞老店</van-tag>
+                </view>
+            </view>
+        </view>
+        <view class="good-shop-star">
+            <text style="font-size:small; margin-right:10px">综合体验</text>
+            <van-rate size="15" value="{{ starValue }}" readonly/>
+        </view>
     </view>
 
 </scroll-view>
